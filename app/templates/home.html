@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="container">
+    <div>
+    <h1 style="font-size:500%">Fourteen Roses</h1>
+    <hr/>
+    <h2>Katie's Writing Journal</h2>
+    <caption>Read and Enjoy</caption>
+    <h1><a href="{{url_for('index')}}">My Writing Journal</a></h1>
+    </div>
+    {% if announcements %}
+    <div class="container">
+        <div class="table">
+            <table class="table-bordered">
+                <thead>
+                Announcements
+                </thead>
+                <tbody>
+                 {% for announcement in announcements %}
+            <tr>{{ announcement.body }}</tr>
+            {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+{% endblock %}
+
+
+A messages area
+Notifications on which stories have had comments added to them
+website visitor counter

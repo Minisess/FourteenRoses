@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">User</th>
+                <th scope="col">Comment</th>
+            </tr>
+         </thead>
+        <tbody>
+            {% for comment in comments %}
+            <tr>
+                <td>{{ comment.author.username }}<br>{{comment.timestamp}}</td>
+                <td>{{ comment.body }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

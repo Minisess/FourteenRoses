@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <style>
+        h1{ color: teal}
+    </style>
+    {% if current_user.is_anonymous %}
+    <h1>Writing Journal Entries</h1>
+    {% else %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+    {% endif %}
+
+    {% for post in posts %}
+        {% include 'post/_storypost.html' %}
+    {% endfor %}
+{% endblock %}

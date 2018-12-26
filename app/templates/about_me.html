@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+{% block styles %}
+    {{ super() }}
+    <style>
+    body {
+        color: teal;
+        background-image: url({{url_for('static', filename='images/galaxy_about_me.jpg')}});
+    }
+    h1{
+        color: teal;
+    }
+    h2 {
+        color: teal;
+    }
+    </style>
+{% endblock %}
+
+<div  style="display: flex; justify-content: center;">
+    <img src="static/images/katieandrhett.jpg">
+</div>
+<div class="container" style="background-color: black; max-width: 800px; align-self: center;">
+<div>
+    <h1 align="center">Katie Brethorst</h1>
+    <h2 align="center">About Me</h2>
+</div>
+<div class="container" style="max-width: 700px">
+    <div style="align-self: center;">
+        <p style="font-size: large">
+    Katie is a writer who spends her days attending the University of Illinois at Springfield, hoping that her
+    student loans will earn her a Bachelor's degree in history, and not just nightmares of the IRS bursting into her
+    house. Besides writing, she has worked at a movie theater, where the popcorn riddled aisles have inspired her
+    hellscapes, and the customers have shown her how to create the vilest of villains. Seeing as Katie is a history
+    fanatic, she has spent her summers as a tour guide at the Dana-Thomas House, which is a Frank Lloyd Wright house,
+    not that she likes to highlight him because he was a terrible person. Instead on her tours she loves to lecture on
+    about Susan Lawrence Dana, the under appreciated owner of the home who saved lives, was an overall badass, and who
+    is constantly overshadowed by Springfield's god, Abraham Lincoln. Katie loves playing with her rescue pit bull
+    Rhett and looks for him for emotional support when she kills off yet another character or can't think of anything
+    witty to write. Katie also has a passion for photography, reading, and procrastinating her homework assignments.
+    Should you for any reason think this person sounds interesting, please feel free to contact her at
+    phanofpanic14@gmail.com.
+        </p></div>
+</div>
+</div>
+
+{% endblock %}

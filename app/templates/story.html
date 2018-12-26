@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<style>
+    p.a{white-space:pre-wrap;}
+    p.a{max-width: 650px;}
+    body{
+        color: black;
+    }
+</style>
+<div class=container>
+    <div class="panel panel-default">
+        {% if current_user.is_admin %}
+		<div style="align-self: right">
+            <form action="{{ url_for('story', title=current_story.title) }}" method="post">
+		        <input type="submit" name="delete" value="Delete">
+            </form>
+		</div>
+        {% endif %}
+        <h1 class="panel-heading">{{ current_story.title }}</h1
+        <div>
+            <div class="panel-body" align="center">
+                <p class="a" align="left">{{ current_story.body }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container panel">
+            {% include 'post/_newcomment.html' %}
+            {% include 'post/_comments.html' %}
+</div>
+        {% endblock %}

@@ -1,0 +1,28 @@
+Delete button for posts
+
+Better Home Page
+> Title of the Website, Fourteen Roses
+> Katie's Writing Journal
+>Underneath in smaller font, Read and Enjoy
+>A messages area
+>Notifications on which stories have had comments added to them
+>website visitor counter
+
+>admin filtering needs to be changed, add admin attribute or requirement
+
+
+
+Contains Version 0.3 Fourteen Roses Blog
+
+Home page
+unused announcments added to Hompage
+Text on Home page
+announcements removed from index
+Index header changed
+secret key changed to be more secret
+About me background added 
+about me black text box added
+12/23/18 db backup
+
+
+
